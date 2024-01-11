@@ -1,0 +1,203 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/background.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card{
+    border: 2px solid white;
+    border-radius: 2rem;
+    padding: 2rem;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(.4rem);
+    box-shadow: 4px 4px 8px rgb(27, 227, 204);
+}
+
+.login-card h1{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgb(27, 227, 204);
+}
+
+.login-card .fa{
+    color: white;
+}
+
+.login-card .box .input-box{
+    width: 100%;
+    height: 40px;
+    padding-left: 1rem;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.login-card .box{
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.login-card .box .icon-eye{
+    cursor: pointer;
+}
+
+.login-card .check input{
+    transform: scale(1.2);
+    margin-right: 10px;
+}
+
+.login-card .check input:checked{
+    accent-color: #000;
+}
+
+.login-card .check span{
+    color: white;
+    font-weight: 600;
+}
+
+.login-card .login-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.login-card .login-btn .btn{
+    width: 60%;
+    transition: .2s;
+}
+
+.login-card .login-btn .btn:hover{
+    transform: scale(0.9);
+}
+
+.login-card .register-link{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.login-card .register-link a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid rgb(27, 227, 204);
+    transition: .2s;
+}
+
+.login-card .register-link a:hover{
+    transform: scale(1.1);
+    text-shadow: 2px 2px 4px rgb(27, 227, 204);
+    color: white;
+}
+
+#eye1{
+    display: none;
+}
+
+/* ================ */
+
+.modal-content{
+    border: 2px solid white;
+    border-radius: 2rem;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(.4rem);
+}
+
+.modal-content .modal-header h1{
+    color: white;
+}
+
+.modal-content .modal-body{
+    display: flex;
+    justify-content: center;
+}
+
+.modal-content .modal-body input{
+    width: 90%;
+    height: 3rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    background-color: transparent;
+    color: white;
+}
+
+.modal-content .modal-body input::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.modal-content .modal-footer{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ========================== */
+
+#toast {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    padding: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 0.5rem;
+    display: none;
+    z-index: 10;
+}
+
+.show {
+    display: block;
+    animation: fadeInOut 2s ease-out;
+}
+  
+@keyframes fadeInOut {
+    0%, 100% {
+    opacity: 0;
+    }
+    25%, 75% {
+    opacity: 1;
+    }
+}
+
+
+
+.home{
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    transition: all 0.4s;
+}
+
+.home i{
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.home:hover{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.home:hover i{
+    color: black;
+}
